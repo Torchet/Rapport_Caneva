@@ -1,0 +1,87 @@
+\documentclass[a4paper, 12pt]{article}
+% Importation du préambule dans un .tex séparé
+\input{Preambule/Preambule.tex}
+\begin{document}
+% Importation de la Page de Garde dans un .tex séparé
+\input{Pdg/PdG.tex}
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\newpage
+\section{Figures}
+%%%%%%%%%% EXAMPLE POUR L'INCLUSION DE FIGURES
+\section{Figure simple}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{filename.eps} 
+    \caption{Légende de la Figure simple}\label{fig:filename1}
+\end{figure}
+\section{Figures côtes à côtes}
+\begin{figure}[H]
+    % On crée un environnement figure dans lequel on met des minipages    
+    \begin{minipage}{0.49\textwidth} % Minipage gauche
+        \centering
+        \includegraphics[width=\textwidth]{filename.eps} 
+        \caption{Légende de la figure de gauche}\label{fig:filename2}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\textwidth} % Minipage droite
+        \centering
+        \includegraphics[width=\textwidth]{Laser_L_I.eps}
+        \caption{Légende de la figure de droite}\label{fig:Laser_L_I1}
+    \end{minipage}
+\end{figure}
+\section{Figures triples} 
+\begin{figure}[H]
+    % On crée un environnement figure dans lequel on met des minipages    
+    \begin{minipage}{0.49\textwidth} % Minipage gauche
+        \centering
+        \includegraphics[width=\textwidth]{filename.eps} 
+        \caption{Légende du filename.eps}\label{fig:filename3}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\textwidth} % Minipage droite
+        \centering
+        \includegraphics[width=\textwidth]{Laser_L_I.eps}
+        \caption{Légende du Laser\_L\_I.eps}\label{fig:Laser_L_I2}
+    \end{minipage}
+    \centering
+    \includegraphics[width=0.49\textwidth]{Laser_P_I.eps}
+    \caption{Légende du Laser\_PI\_.eps}\label{fig:Laser_P_I}
+    %\caption{Légende Générale}
+\end{figure}
+La Figure filename.eps et sa référence~\ref{fig:filename3}
+\newpage
+\section{Formules}
+\subsection{Matrices}
+%%%%%%%%%% EXAMPLE POUR DES MATRICES
+\begin{align}
+    s\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix} = 
+    \begin{pmatrix}
+        -\frac{1}{T_{ele}} & 0 & 0 \\
+        \frac{K_{mot}}{J} & -\frac{b_{mot}}{J} & 0\\
+        0 & i_{reduc} & 0 
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+    x_1\\
+    x_2\\
+    x_3
+    \end{pmatrix}
+    +
+    \begin{pmatrix}
+        \frac{K_{ele}}{T_{ele}}\\
+        0\\
+        0
+    \end{pmatrix}
+    w
+\end{align}
+\newpage
+%%%%%%%%%% EXAMPLE POUR DES TABLEAUX  
+\section{Tableaux}
+
+%%%%%%%%%% EXAMPLE POUR L'INCLUSION DE LA BIBLIOGRAPHIE
+\nocite{*} % Permet d'afficher toutes les entrées de la biblio sans citation dans le texte
+\printbibliography[title={Références}] % Affiche la bibliographie avec le titre Références
+\end{document}
