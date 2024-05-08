@@ -9,7 +9,7 @@ Ce dépôt a pour but de fournir un caneva simple pour les rapports de laboratoi
 * U_C_Code.ipynb: Fichiers de traitement de donnée sous forme de Jupyter Notebook, c'est à partir de ce fichier que vous aller généré vos graphiques et tables dans leurs dossiers respectifs
 * U_C_Rapport.tex: Fichier contenant le corps principal du .tex.
 # Utilisation
-Pour l'utiliser, il vous faudra le cloner et supprimer le .git pour en faire votre dossier séparé. Sentez-vous libre de crée votre propre dépôt à  partir de **votre dossier**.
+Pour l'utiliser, il vous faudra le cloner et supprimer le .git pour en faire votre dossier séparé. Sentez-vous libre de créer votre propre dépôt à  partir de **votre dossier**.
 # Amélioration
 N'essayer pas de commit pour faire des changements, ils ne seront pas acceptés. Si vous penser à des choses à rajouter des fonctionnalités ou des examples de codes qui pourrait être utile, je vous encourage à crée une branche et modifier celle-ci ou à m'en faire part par 
 message.
